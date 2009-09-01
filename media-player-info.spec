@@ -8,6 +8,7 @@ URL:		http://people.freedesktop.org/~teuf/media-player-info/
 Source:		http://people.freedesktop.org/~teuf/media-player-info/%{name}-%{version}.tar.gz
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 BuildRequires:	python
+BuildRequires:	udev-devel
 BuildArch:	noarch
 
 %description
