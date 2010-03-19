@@ -38,4 +38,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc README NEWS
 %dir %{_datadir}/media-player-info
  %{_datadir}/media-player-info/*.mpi
-/lib/udev/rules.d/90-usb-media-players.rules
+/lib/udev/rules.d/40-usb-media-players.rules
