@@ -1,5 +1,5 @@
 Name:		media-player-info
-Version:	6
+Version:	7
 Release:	%mkrel 1
 Summary:	Media Player Information
 Group:		System/Kernel and hardware
