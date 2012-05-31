@@ -1,12 +1,11 @@
 Name:		media-player-info
-Version:	7
+Version:	17
 Release:	%mkrel 1
 Summary:	Media Player Information
 Group:		System/Kernel and hardware
 License:	BSD
 URL:		http://people.freedesktop.org/~teuf/media-player-info/
-Source:		http://people.freedesktop.org/~teuf/media-player-info/%{name}-%{version}.tar.gz
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
+Source0:	http://people.freedesktop.org/~teuf/media-player-info/%{name}-%{version}.tar.gz
 BuildRequires:	python
 BuildRequires:	udev-devel
 BuildArch:	noarch
@@ -27,14 +26,9 @@ its own package as part of the "halectomy".
 %make
 
 %install
-rm -rf $RPM_BUILD_ROOT
 %makeinstall_std
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
-%defattr (-,root,root)
 %doc README NEWS
 %dir %{_datadir}/media-player-info
  %{_datadir}/media-player-info/*.mpi
