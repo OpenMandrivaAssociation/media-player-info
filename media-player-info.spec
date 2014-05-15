@@ -7,7 +7,7 @@ License:	BSD
 Url:		http://people.freedesktop.org/~teuf/media-player-info/
 Source0:	http://people.freedesktop.org/~teuf/media-player-info/%{name}-%{version}.tar.gz
 BuildArch:	noarch
-BuildRequires:	python
+BuildRequires:	python3
 BuildRequires:	pkgconfig(udev)
 
 %description
