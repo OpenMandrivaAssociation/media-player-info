@@ -33,4 +33,5 @@ its own package as part of the "halectomy".
 %dir %{_datadir}/media-player-info
  %{_datadir}/media-player-info/*.mpi
 /lib/udev/rules.d/40-usb-media-players.rules
+/lib/udev/hwdb.d/20-usb-media-players.hwdb
 
