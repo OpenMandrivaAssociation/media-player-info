@@ -7,7 +7,7 @@ License:	BSD
 Url:		http://people.freedesktop.org/~teuf/media-player-info/
 Source0:	http://people.freedesktop.org/~teuf/media-player-info/%{name}-%{version}.tar.gz
 BuildArch:	noarch
-BuildRequires:	python
+BuildRequires:	python3
 BuildRequires:	pkgconfig(udev)
 
 %description
@@ -33,4 +33,5 @@ its own package as part of the "halectomy".
 %dir %{_datadir}/media-player-info
  %{_datadir}/media-player-info/*.mpi
 /lib/udev/rules.d/40-usb-media-players.rules
+/lib/udev/hwdb.d/20-usb-media-players.hwdb
 
