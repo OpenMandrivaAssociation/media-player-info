@@ -1,7 +1,7 @@
 Summary:	Media Player Information
 Name:		media-player-info
-Version:	22
-Release:	6
+Version:	24
+Release:	1
 Group:		System/Kernel and hardware
 License:	BSD
 Url:		http://people.freedesktop.org/~teuf/media-player-info/
@@ -29,7 +29,7 @@ its own package as part of the "halectomy".
 %makeinstall_std
 
 %files
-%doc README NEWS
+%doc NEWS
 %dir %{_datadir}/media-player-info
  %{_datadir}/media-player-info/*.mpi
 /lib/udev/rules.d/40-usb-media-players.rules
