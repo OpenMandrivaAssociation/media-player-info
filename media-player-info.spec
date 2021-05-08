@@ -1,14 +1,15 @@
 Summary:	Media Player Information
 Name:		media-player-info
 Version:	24
-Release:	1
+Release:	2
 Group:		System/Kernel and hardware
 License:	BSD
-Url:		http://people.freedesktop.org/~teuf/media-player-info/
+Url:		https://www.freedesktop.org/wiki/Software/media-player-info
 Source0:	http://www.freedesktop.org/software/media-player-info/%{name}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	python3
 BuildRequires:	pkgconfig(udev)
+BuildRequires:	systemd-rpm-macros
 
 %description
 This is the freedesktop.org media player information database.
@@ -19,18 +20,18 @@ devices. This information used to live in hal-info, but it has been moved to
 its own package as part of the "halectomy".
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %configure
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc NEWS
 %dir %{_datadir}/media-player-info
- %{_datadir}/media-player-info/*.mpi
-/lib/udev/rules.d/40-usb-media-players.rules
-/lib/udev/hwdb.d/20-usb-media-players.hwdb
+%{_datadir}/media-player-info/*.mpi
+%{_udevrulesdir}/40-usb-media-players.rules
+%{_udevhwdbdir}/20-usb-media-players.hwdb
