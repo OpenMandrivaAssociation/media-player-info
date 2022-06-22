@@ -1,7 +1,7 @@
 Summary:	Media Player Information
 Name:		media-player-info
 Version:	24
-Release:	2
+Release:	3
 Group:		System/Kernel and hardware
 License:	BSD
 Url:		https://www.freedesktop.org/wiki/Software/media-player-info
